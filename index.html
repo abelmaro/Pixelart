@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">		
+    <link rel="stylesheet" href="assets/fonts/Fairfax/stylesheet.css">
+    <title>NixelArt</title>
+</head>
+<body>
+    <nav>
+        <ul id="menu">
+            <li class="items">
+                NixelArt
+            </li>
+        </ul>
+    </nav>
+    <div id="contenedor">
+        <div class="colores">
+            <input type="color" id="color" class="color" onchange="app.seleccionarColor()">
+            <i class="fas fa-eraser" onclick="app.seleccionarColor('borrar')" id="goma"></i>
+            <i class="fas fa-pencil-alt" onclick="app.seleccionarColor()" id="pincel"></i>
+            <button onclick="app.borrarTodo()" class="color">Borrar todo</button>
+            <button onclick="app.cuadricula('ocultar')" class="color">Ocultar cuadricula</button>
+            <button onclick="app.cuadricula('mostrar')" class="color">Mostrar cuadricula</button>
+        </div>
+        <div id="grilla" class="grilla" id="color"> 
+            
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

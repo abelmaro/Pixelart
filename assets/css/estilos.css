@@ -1,0 +1,176 @@
+nav {
+  width: 100%;
+  padding: 1% 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
+  position: fixed;
+  -webkit-box-shadow: 0px 20px 10px -10px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 20px 10px -10px rgba(0, 0, 0, 0.75);
+}
+
+nav #menu .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 50px;
+}
+
+@font-face {
+  font-family: "Fairfax";
+  src: url("/assets/fonts/Fairfax/Fairfax.woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Fairfax";
+}
+
+#contenedor {
+  width: 100%;
+  height: 100vh;
+  padding-top: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../img/fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#contenedor .colores {
+  width: 10%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1% 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 5px solid white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1c266e), to(#59b3cb));
+  background-image: linear-gradient(#1c266e, #59b3cb);
+  margin: 1%;
+  -webkit-box-shadow: 0px 30px 20px -2px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 30px 20px -2px rgba(0, 0, 0, 0.75);
+}
+
+#contenedor .colores .color {
+  width: 90%;
+  height: 10%;
+  border: 2px solid #4c3d8c;
+  font-size: 15px;
+  color: white;
+  background-color: #6d7eef;
+  border-radius: 15px;
+  font-weight: bold;
+  background-image: -webkit-gradient(linear, left top, right top, from(#2880a8), to(#59b3cb));
+  background-image: linear-gradient(to right, #2880a8, #59b3cb);
+  -webkit-box-shadow: 0px 49px 26px -27px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 49px 26px -27px rgba(0, 0, 0, 0.75);
+}
+
+#contenedor .colores .color[id=color] {
+  border-radius: 0px;
+}
+
+#contenedor .colores #goma, #contenedor .colores #pincel {
+  font-size: 50px;
+  padding: 5%;
+  color: white;
+  -webkit-box-shadow: 0px 20px 35px -10px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 20px 35px -10px rgba(0, 0, 0, 0.75);
+}
+
+#contenedor .colores .rojo {
+  background-color: red;
+}
+
+#contenedor .colores .amarillo {
+  background-color: yellow;
+}
+
+#contenedor .colores .azul {
+  background-color: blue;
+}
+
+#contenedor .grilla {
+  width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: white;
+  -webkit-box-shadow: 0px 30px 20px -2px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 30px 20px -2px rgba(0, 0, 0, 0.75);
+}
+
+#contenedor .grilla .celda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #a5a5a5;
+}
+
+.seleccionado {
+  -webkit-transition: .3s;
+  transition: .3s;
+  border: 3px dotted white;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.deseleccionado {
+  -webkit-transition: .3s;
+  transition: .3s;
+  border: none;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.none {
+  border: 0px solid white;
+}
+/*# sourceMappingURL=estilos.css.map */
